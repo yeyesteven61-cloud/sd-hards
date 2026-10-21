@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende sobre sistemas informáticos, hardware, software, redes y ciberseguridad.">
+  <title>TechZone | Sistemas Informáticos</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0b1728;
+      border-bottom: 1px solid #20334a;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #2dd4bf;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #2dd4bf;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+      background: radial-gradient(ellipse at top, #164e63, #07111f 70%);
+    }
+
+    .etiqueta {
+      color: #2dd4bf;
+      font-weight: bold;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.15;
+      margin: 20px auto;
+      max-width: 850px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      color: #b8c7d9;
+      font-size: 18px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #0d9488;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .boton:hover {
+      background: #14b8a6;
+    }
+
+    section {
+      padding: 65px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    .titulo {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .titulo h2 {
+      font-size: 32px;
+      color: #2dd4bf;
+      margin-bottom: 10px;
+    }
+
+    .titulo p {
+      color: #aabbd0;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .tarjeta {
+      background: #102137;
+      border: 1px solid #243b55;
+      padding: 25px;
+      border-radius: 14px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      border-color: #2dd4bf;
+    }
+
+    .icono {
+      font-size: 35px;
+      margin-bottom: 12px;
+    }
+
+    .tarjeta h3 {
+      color: #f1f5f9;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta p {
+      color: #b8c7d9;
+    }
+
+    #importancia {
+      background: #0b1728;
+    }
+
+    .importancia-contenido {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .importancia-contenido p {
+      margin-bottom: 16px;
+      color: #c4d2e2;
+    }
+
+    #contacto {
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #030914;
+      color: #94a3b8;
+      border-top: 1px solid #20334a;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      nav {
+        gap: 12px;
+      }
+
+      section {
+        padding: 45px 5%;
+      }
+
+      .hero {
+        padding: 65px 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">TechZone.</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#temas">Temas</a>
+      <a href="#importancia">Importancia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="etiqueta">TECNOLOGÍA · INNOVACIÓN · FUTURO</div>
+      <h1>Explora el mundo de los sistemas informáticos</h1>
+      <p>
+        Descubre cómo funcionan las computadoras, los programas,
+        las redes y las tecnologías que transforman nuestro mundo.
+      </p>
+      <a class="boton" href="#temas">Explorar temas</a>
+    </section>
+
+    <section id="temas">
+      <div class="titulo">
+        <h2>Áreas de la informática</h2>
+        <p>Conoce los elementos fundamentales de un sistema informático.</p>
+      </div>
+
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <div class="icono">🖥️</div>
+          <h3>Hardware</h3>
+          <p>Son los componentes físicos del equipo, como el procesador,
+          la memoria RAM, el disco de almacenamiento y la placa base.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="icono">💿</div>
+          <h3>Software</h3>
+          <p>Incluye los sistemas operativos y las aplicaciones que permiten
+          realizar tareas, procesar información y controlar el equipo.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="icono">🌐</div>
+          <h3>Redes informáticas</h3>
+          <p>Conectan dispositivos para compartir información y recursos
+          mediante tecnologías como Wi-Fi, Ethernet e Internet.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="icono">🔐</div>
+          <h3>Ciberseguridad</h3>
+          <p>Ayuda a proteger los equipos, las cuentas y los datos frente
+          a amenazas, accesos no autorizados y programas maliciosos.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="icono">🛠️</div>
+          <h3>Mantenimiento</h3>
+          <p>Consiste en revisar, limpiar, actualizar y diagnosticar equipos
+          para mejorar su funcionamiento y prevenir fallos.</p>
+        </article>
+
+        <article class="tarjeta">
+          <div class="icono">🧑‍💻</div>
+          <h3>Programación</h3>
+          <p>Permite crear aplicaciones y soluciones digitales utilizando
+          lenguajes como HTML, CSS, JavaScript y Python.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="importancia">
+      <div class="importancia-contenido">
+        <div class="titulo">
+          <h2>¿Por qué son importantes?</h2>
+        </div>
+        <p>
+          Los sistemas informáticos permiten almacenar, procesar y transmitir
+          información de manera eficiente. Son esenciales en la educación,
+          la medicina, las empresas, la comunicación y la investigación.
+        </p>
+        <p>
+          Comprender sus componentes nos ayuda a utilizar la tecnología
+          responsablemente, solucionar problemas y desarrollar nuevas ideas.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="titulo">
+        <h2>¡La tecnología empieza contigo!</h2>
+        <p>Aprende, investiga y descubre todo lo que puedes crear.</p>
+      </div>
+      <a class="boton" href="https://github.com/" target="_blank"
+         rel="noopener noreferrer">Explorar GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 TechZone | Proyecto educativo de Sistemas Informáticos</p>
+  </footer>
+
+</body>
+</html>
